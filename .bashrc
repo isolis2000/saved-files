@@ -138,8 +138,8 @@ alias flatlist='flatpak list --app'
 alias flatrepair='sudo flatpak repair'
 
 # flatpak apps
+## aliases
 alias netbeans='flatpak run org.apache.netbeans'
-alias code='flatpak run com.visualstudio.code'
 alias vlc='flatpak run org.videolan.VLC'
 alias postman='flatpak run com.getpostman.Postman'
 alias zoom='flatpak run us.zoom.Zoom'
@@ -151,9 +151,14 @@ alias brave='flatpak run com.brave.Browser'
 alias bitwarden='flatpak run com.bitwarden.desktop'
 alias gitkraken='flatpak run com.axosoft.GitKraken'
 alias deluge='flatpak run org.deluge_torrent.deluge'
+alias onlyofice='flatpak run org.onlyoffice.desktopeditors'
+alias blanket='flatpak run com.rafaelmardojai.Blanket'
+alias translate='flatpak run com.github.gi_lom.dialect'
+alias code='flatpak run com.visualstudio.code'
+alias telegram='flatpak run org.telegram.desktop'
 
 # update all package managers
-alias allup='sudo apt update && sudo apt upgrade && sudo flatpak update'
+alias allup='sudo apt update -y && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
 
 # confirm before overwriting something
 alias cp='cp -i'
@@ -187,3 +192,7 @@ up () {
     echo "Couldn't go up $limit dirs.";
   fi
 }
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
