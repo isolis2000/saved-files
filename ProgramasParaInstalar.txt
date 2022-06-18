@@ -1,0 +1,20 @@
+Con mi bashrc... flatin
+com.axosoft.GitKraken
+com.bitwarden.desktop
+com.discordapp.Discord
+com.getpostman.Postman
+com.github.gi_lom.dialect
+com.microsoft.Teams 
+com.rafaelmardojai.Blanket
+com.spotify.Client
+com.visualstudio.code
+org.apache.netbeans
+org.deluge_torrent.deluge
+org.kryogenix.Pick
+org.onlyoffice.desktopeditors
+org.videolan.VLC
+us.zoom.Zoom
+
+no flatpak
+flameshot
+Tilix
