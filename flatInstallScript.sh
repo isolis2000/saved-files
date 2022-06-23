@@ -15,5 +15,4 @@ sudo flatpak install -y org.kryogenix.Pick
 sudo flatpak install -y org.onlyoffice.desktopeditors
 sudo flatpak install -y org.videolan.VLC
 sudo flatpak install -y us.zoom.Zoom
-sudo flatpak install -y flathub org.mozilla.Thunderbird
 sudo flatpak install -y org.telegram.desktop
