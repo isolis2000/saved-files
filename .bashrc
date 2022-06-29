@@ -118,27 +118,32 @@ fi
 
 ## ALIASES ##
 
-# apt package manager
+# package managers
+## apt
 alias aptup='sudo apt update && sudo apt upgrade'
 alias aptupd='sudo apt update'
 alias aptupg='sudo apt upgrade'
 alias aptin='sudo apt install'
 alias aptrm='sudo apt remove'
 
-# snap package manager
+## dnf
+alias dnfin='sudo dnf install'
+alias dnfrm='sudo dnf remove'
+alias dnfup='sudo dnf update'
+
+## snap
 alias snapin='sudo snap install'
 alias snaprm='sudo snap remove'
 
-# flatpak
+## flatpak 
 alias flatin='sudo flatpak install'
 alias flatrm='sudo flatpak uninstall'
-alias flatsearch='flatpak search'
+alias flats='flatpak search'
 alias flatup='sudo flatpak update'
-alias flatlist='flatpak list --app'
-alias flatrepair='sudo flatpak repair'
+alias flatl='flatpak list --app'
+alias flatrep='sudo flatpak repair'
 
-# flatpak apps
-## aliases
+# flatpak app aliases
 alias netbeans='flatpak run org.apache.netbeans'
 alias vlc='flatpak run org.videolan.VLC'
 alias postman='flatpak run com.getpostman.Postman'
@@ -156,9 +161,10 @@ alias blanket='flatpak run com.rafaelmardojai.Blanket'
 alias translate='flatpak run com.github.gi_lom.dialect'
 alias code='flatpak run com.visualstudio.code'
 alias telegram='flatpak run org.telegram.desktop'
+alias geary='flatpak run org.gnome.Geary'
 
 # update all package managers
-alias allup='sudo apt update -y && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
+alias allup='sudo dnf update -y && sudo apt update -y && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
 
 # confirm before overwriting something
 alias cp='cp -i'
