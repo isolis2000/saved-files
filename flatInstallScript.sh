@@ -20,13 +20,15 @@ sudo flatpak install -y org.telegram.desktop
 # When using Fedora
 
 # dnf
+sudo dnf install -y tilix
+sudo dnf install -y micro
 sudo dnf install -y discord
 sudo dnf install -y dialect
 sudo dnf install -y deluge
 sudo dnf install -y gpick
 sudo dnf install -y vlc
 sudo dnf install -y telegram
-sudo dnf group install "C Development Tools and Libraries" "Development Tools"
+sudo dnf group install -y "C Development Tools and Libraries" "Development Tools"
 
 # flatpak
 sudo flatpak install -y com.rafaelmardojai.Blanket
