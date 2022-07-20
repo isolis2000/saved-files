@@ -26,6 +26,7 @@ sudo dnf install -y deluge
 sudo dnf install -y gpick
 sudo dnf install -y vlc
 sudo dnf install -y telegram
+sudo dnf group install "C Development Tools and Libraries" "Development Tools"
 
 # flatpak
 sudo flatpak install -y com.rafaelmardojai.Blanket
