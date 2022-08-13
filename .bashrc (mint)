@@ -71,11 +71,10 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
+    alias ls='ls --color=auto'
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-   
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -86,11 +85,6 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -126,11 +120,6 @@ alias aptupg='sudo apt upgrade'
 alias aptin='sudo apt install'
 alias aptrm='sudo apt remove'
 
-## dnf
-alias dnfin='sudo dnf install'
-alias dnfrm='sudo dnf remove'
-alias dnfup='sudo dnf update'
-
 ## snap
 alias snapin='sudo snap install'
 alias snaprm='sudo snap remove'
@@ -143,28 +132,8 @@ alias flatup='sudo flatpak update'
 alias flatl='flatpak list --app'
 alias flatrep='sudo flatpak repair'
 
-# flatpak app aliases
-alias netbeans='flatpak run org.apache.netbeans'
-alias vlc='flatpak run org.videolan.VLC'
-alias postman='flatpak run com.getpostman.Postman'
-alias zoom='flatpak run us.zoom.Zoom'
-alias discord='flatpak run com.discordapp.Discord'
-alias teams='flatpak run com.microsoft.Teams'
-alias pick='flatpak run org.kryogenix.Pick'
-alias spotify='flatpak run com.spotify.Client'
-alias brave='flatpak run com.brave.Browser'
-alias bitwarden='flatpak run com.bitwarden.desktop'
-alias gitkraken='flatpak run com.axosoft.GitKraken'
-alias deluge='flatpak run org.deluge_torrent.deluge'
-alias onlyofice='flatpak run org.onlyoffice.desktopeditors'
-alias blanket='flatpak run com.rafaelmardojai.Blanket'
-alias translate='flatpak run com.github.gi_lom.dialect'
-alias code='flatpak run com.visualstudio.code'
-alias telegram='flatpak run org.telegram.desktop'
-alias geary='flatpak run org.gnome.Geary'
-
 # update all package managers
-alias allup='sudo dnf update -y && sudo apt update -y && sudo apt upgrade -y && sudo flatpak update -y && sudo snap refresh'
+alias allup='sudo apt update -y && sudo apt upgrade -y && sudo flatpak update -y'
 
 # confirm before overwriting something
 alias cp='cp -i'
