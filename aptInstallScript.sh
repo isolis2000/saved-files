@@ -10,14 +10,14 @@ sudo apt install -y mpv
 sudo apt install -y build-essential
 
 # flatpak
-sudo flatpak install -y com.discordapp.Discord
-sudo flatpak install -y com.bitwarden.desktop
-sudo flatpak install -y rafaelmardojai.Blanket
-sudo flatpak install -y com.microsoft.Teams
-sudo flatpak install -y com.getpostman.Postman
-sudo flatpak install -y com.spotify.Client
-sudo flatpak install -y com.visualstudio.code
-sudo flatpak install -y org.onlyoffice.desktopeditors
-sudo flatpak install -y us.zoom.Zoom
-sudo flatpak install -y org.telegram.desktop
-sudo flatpak install -y org.apache.netbeans
+flatpak install flathub -y com.discordapp.Discord
+flatpak install flathub -y com.bitwarden.desktop
+flatpak install flathub -y rafaelmardojai.Blanket
+flatpak install flathub -y com.microsoft.Teams
+flatpak install flathub -y com.getpostman.Postman
+flatpak install flathub -y com.spotify.Client
+flatpak install flathub -y com.visualstudio.code
+flatpak install flathub -y org.onlyoffice.desktopeditors
+flatpak install flathub -y us.zoom.Zoom
+flatpak install flathub -y org.telegram.desktop
+flatpak install flathub -y org.apache.netbeans
