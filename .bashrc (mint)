@@ -71,10 +71,11 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-    alias ls='ls --color=auto'
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -85,6 +86,11 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -110,6 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+## EXTRA CONFIGURATIONS ##
+# export PS1="$ "
+
 ## ALIASES ##
 
 # package managers
@@ -119,26 +128,26 @@ alias aptupd='sudo apt update'
 alias aptupg='sudo apt upgrade'
 alias aptin='sudo apt install'
 alias aptrm='sudo apt remove'
+alias apts='apt search'
 
 ## snap
 alias snapin='sudo snap install'
 alias snaprm='sudo snap remove'
 
 ## flatpak 
-alias flatin='sudo flatpak install'
-alias flatrm='sudo flatpak uninstall'
+alias flatin='flatpak install'
+alias flatrm='flatpak uninstall'
 alias flats='flatpak search'
-alias flatup='sudo flatpak update'
+alias flatup='flatpak update'
 alias flatl='flatpak list --app'
 alias flatrep='sudo flatpak repair'
 
 # update all package managers
-alias allup='sudo apt update -y && sudo apt upgrade -y && sudo flatpak update -y'
+alias allup='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && flatpak update -y && sudo snap refresh'
 
 # confirm before overwriting something
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='rm -i'
 alias ln='ln -i'
 
 # file management
@@ -147,6 +156,12 @@ alias mkdir='mkdir -pv'
 
 # weather
 alias weather='curl wttr.in'
+
+# bpytop
+alias top='bpytop'
+
+# minikube kubernetes
+alias kubectl="minikube kubectl --"
 
 # navigation
 up () {
