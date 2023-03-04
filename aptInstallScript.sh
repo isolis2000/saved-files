@@ -1,12 +1,9 @@
 # Linux Mint
 
 # apt
-sudo apt install -y micro
 sudo apt install -y gpick
-sudo apt install -y dialect
 sudo apt install -y deluge
 sudo apt install -y vlc
-sudo apt install -y mpv
 sudo apt install -y build-essential
 
 # flatpak
@@ -16,7 +13,6 @@ flatpak install flathub -y rafaelmardojai.Blanket
 flatpak install flathub -y com.microsoft.Teams
 flatpak install flathub -y com.getpostman.Postman
 flatpak install flathub -y com.spotify.Client
-flatpak install flathub -y com.visualstudio.code
 flatpak install flathub -y org.onlyoffice.desktopeditors
 flatpak install flathub -y us.zoom.Zoom
 flatpak install flathub -y org.telegram.desktop
