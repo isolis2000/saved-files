@@ -33,3 +33,6 @@ flatpak install flathub -y us.zoom.Zoom
 flatpak install flathub -y org.telegram.desktop
 flatpak install flathub -y org.apache.netbeans
 
+# config
+cd /etc/profile.d
+sudo ln -s vte-2.91.sh ./vte.sh
