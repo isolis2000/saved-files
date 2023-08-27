@@ -15,12 +15,16 @@ sudo fc-cache -f -v
 
 # apt
 sudo apt install -y gpick
-sudo apt install -y deluge
 sudo apt install -y vlc
 sudo apt install -y gnome-boxes
 sudo apt install -y neofetch
 sudo apt install -y bpytop
 sudo apt install -y build-essential
+
+# ppa
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt update 
+sudo apt install qbittorrent 
 
 # flatpak
 flatpak install flathub -y com.discordapp.Discord
