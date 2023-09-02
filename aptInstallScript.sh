@@ -20,6 +20,7 @@ sudo apt install -y gnome-boxes
 sudo apt install -y neofetch
 sudo apt install -y bpytop
 sudo apt install -y build-essential
+sudo apt install -y snapd
 
 # ppa
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
