@@ -22,6 +22,8 @@ sudo apt install -y bpytop
 sudo apt install -y build-essential
 sudo apt install -y snapd
 sudo apt install -y npm
+sudo apt install -y nodejs
+sudo apt install -y npm
 
 # ppa
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
