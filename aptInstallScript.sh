@@ -21,6 +21,7 @@ sudo apt install -y neofetch
 sudo apt install -y bpytop
 sudo apt install -y build-essential
 sudo apt install -y snapd
+sudo apt install -y npm
 
 # ppa
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
@@ -37,6 +38,10 @@ flatpak install flathub -y org.onlyoffice.desktopeditors
 flatpak install flathub -y us.zoom.Zoom
 flatpak install flathub -y org.telegram.desktop
 flatpak install flathub -y org.apache.netbeans
+flatpak install flathub -y com.usebottles.bottles
+
+# npm
+sudo npm install -g -y tldr
 
 # config
 cd /etc/profile.d
