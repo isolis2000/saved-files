@@ -1,0 +1,98 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
+
+## ALIASES ##
+
+# package managers
+## dnf
+alias dnfin='sudo dnf install'
+alias dnfrm='sudo dnf remove'
+alias dnfs='dnf search'
+alias dnfup='sudo dnf update'
+
+## flatpak 
+alias flatin='flatpak install'
+alias flatrm='flatpak uninstall'
+alias flats='flatpak search --columns=name,application'
+alias flatup='flatpak update'
+alias flatl='flatpak list --app'
+alias flatrep='sudo flatpak repair'
+
+# update all package managers
+alias allup='sudo dnf update -y && sudo dnf autoremove -y && flatpak update -y && sudo snap refresh'
+
+# confirm before overwriting something
+alias cp='cp -i'
+alias mv='mv -i'
+alias ln='ln -i'
+
+# file management
+alias ls='ls -lah --color=auto'
+alias mkdir='mkdir -pv'
+
+# weather
+alias weather='curl wttr.in'
+
+# bpytop
+alias top='bpytop'
+
+# minikube kubernetes
+alias kubectl='minikube kubectl --'
+
+# python
+alias python='python3'
+
+# tldr
+alias tldr='tldr -t ocean'
+
+# thefuck
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias FUCK='fuck'
+
+# navigation
+up () {
+  local d=""
+  local limit="$1"
+
+  # Default to limit of 1
+  if [ -z "$limit" ] || [ "$limit" -le 0 ]; then
+    limit=1
+  fi
+
+  for ((i=1;i<=limit;i++)); do
+    d="../$d"
+  done
+
+  # perform cd. Show error if cd fails
+  if ! cd "$d"; then
+    echo "Couldn't go up $limit dirs.";
+  fi
+}
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
