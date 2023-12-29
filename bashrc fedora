@@ -42,7 +42,7 @@ alias flatl='flatpak list --app'
 alias flatrep='sudo flatpak repair'
 
 # update all package managers
-alias allup='sudo dnf update -y && sudo dnf autoremove -y && flatpak update -y && sudo snap refresh'
+alias allup='sudo dnf update -y && flatpak update -y && sudo snap refresh'
 
 # confirm before overwriting something
 alias cp='cp -i'
@@ -64,6 +64,7 @@ alias kubectl='minikube kubectl --'
 
 # python
 alias python='python3'
+alias pip='pip3'
 
 # tldr
 alias tldr='tldr -t ocean'
