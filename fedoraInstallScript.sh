@@ -2,25 +2,28 @@ sudo dnf update -y && flatpak update -y
 
 # dnf
 sudo dnf install -y bottles
-sudo dnf install -y telegram-desktop
-sudo dnf install -y discord
 sudo dnf install -y gnome-boxes
 sudo dnf install -y qbittorrent
 sudo dnf install -y vlc
 sudo dnf install -y mpv
 sudo dnf install -y gpick
 sudo dnf install -y zoom
+sudo dnf install -y cheese
 sudo dnf group install -y "C Development Tools and Libraries" "Development Tools"
 sudo dnf install -y cmake
 
 # flatpak
 flatpak install -y com.bitwarden.desktop
+flatpak install -y org.telegram.desktop
+flatpak install -y com.discordapp.Discord
 flatpak install -y com.getpostman.Postman
 flatpak install -y com.github.PintaProject.Pinta
 flatpak install -y com.rafaelmardojai.Blanket
 flatpak install -y com.spotify.Client
 flatpak install -y org.apache.netbeans
 flatpak install -y org.onlyoffice.desktopeditors
+flatpak install -y io.dbeaver.DBeaverCommunity
+flatpak install -y com.brave.Browser
 
 # microsoft
 
