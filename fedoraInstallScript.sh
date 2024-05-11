@@ -16,7 +16,7 @@ sudo dnf install -y thefuck
 sudo dnf install -y bzip2-devel
 sudo dnf install -y ncurses-devel
 sudo dnf install -y readline-devel
-sudo dnf install -y python3-tkinter
+sudo dnf install -y tk-devel
 
 # flatpak
 flatpak install -y com.bitwarden.desktop
