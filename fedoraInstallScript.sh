@@ -11,6 +11,12 @@ sudo dnf install -y zoom
 sudo dnf install -y cheese
 sudo dnf group install -y "C Development Tools and Libraries" "Development Tools"
 sudo dnf install -y cmake
+sudo dnf install -y sqlite-devel
+sudo dnf install -y thefuck
+sudo dnf install -y bzip2-devel
+sudo dnf install -y ncurses-devel
+sudo dnf install -y readline-devel
+sudo dnf install -y python3-tkinter
 
 # flatpak
 flatpak install -y com.bitwarden.desktop
