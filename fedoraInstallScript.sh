@@ -46,6 +46,10 @@ sudo dnf install code
 # node
 ## installs NVM (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+
+# node packages
+npm install -g @vue/cli
 
 ## download and install Node.js
 nvm install 20
