@@ -6,7 +6,6 @@ sudo dnf install -y gnome-boxes
 sudo dnf install -y qbittorrent
 sudo dnf install -y vlc
 sudo dnf install -y mpv
-sudo dnf install -y gpick
 sudo dnf install -y zoom
 sudo dnf install -y cheese
 sudo dnf group install -y "C Development Tools and Libraries" "Development Tools"
@@ -30,6 +29,7 @@ flatpak install -y org.apache.netbeans
 flatpak install -y org.onlyoffice.desktopeditors
 flatpak install -y io.dbeaver.DBeaverCommunity
 flatpak install -y com.brave.Browser
+flatpak install -y flathub org.gnome.design.Contrast
 
 # microsoft
 
