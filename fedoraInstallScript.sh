@@ -16,6 +16,7 @@ sudo dnf install -y bzip2-devel
 sudo dnf install -y ncurses-devel
 sudo dnf install -y readline-devel
 sudo dnf install -y tk-devel
+sudo dnf install -y snapd
 
 # flatpak
 flatpak install -y com.bitwarden.desktop
